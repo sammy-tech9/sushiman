@@ -1,0 +1,189 @@
+.popularFoods{
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    background-image: url(../../assets/popular_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.popularFood-title{
+    font-size: 56px;
+    font-family: var(--playfair-display);
+    font-weight: 600;
+    line-height: 78px;
+    color:#fff;
+    text-align: center;
+}
+
+.popularFood-filter{
+    margin-top: 48px;
+    max-width: 100%;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+.popularFood-filter-btn{
+    padding: 10px 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: rgba(225,225,255,0.05);
+    border: 1px solide rgba(225,225,255,0.05);
+    border-radius: 46px;
+    font-size: 16px;
+    font-weight: 300px;
+    line-height: 25px;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+    cursor: pointer;
+
+}
+
+.popularFood-filter-btn img{
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.popularFood-filter-btn.active{
+    background: #fff;
+    color: var(--primary-color);
+
+}
+
+.popularFood-Catalogue{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 56px;
+    margin-top: 50px;
+
+}
+
+.popularFood-button{
+    width: fit-content;
+    padding: 20px 30px;
+    margin: 80px auto 0;
+    font-weight: 500;
+    line-height: 23px;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+    border-radius: 64px;
+    cursor: pointer;
+}
+
+.popularFood-button img{
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    margin-left:21px;
+}
+
+.popularFoodCard{
+    padding: 38px;
+    min-width: 260px;
+    height: fit-content;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 36px;
+    background: rgba(225,225,255,0.05);
+    border: 1px solid rgba(225,225,255,0.2);
+}
+
+.popularFoodCard-image{
+    width: 110px;
+    height: 84px;
+    object-fit: contain;
+}
+
+.popularFoodCard-title{
+     margin-top: 47px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--playfair-display);
+    color: #fff;
+    text-align: center;
+}
+
+.popularFoodCard-details{
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.popularFoodCard-rating{
+     display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.popularFoodCard-rating img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.popularFoodCard-rating p{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+}
+.popularFoodCard-price{
+     font-size: 20px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+}
+
+.popularFoodCard.active-card{
+    background: #fff;
+    min-width: 340px;
+}
+
+.popularFoodCard.active-card 
+.popularFoodCard-image{
+     width: 214px;
+    height: 160px;
+}
+
+.popularFoodCard.active-card 
+.popularFoodCard-title{
+color: var(--black-500);
+font-size: 32px;
+}
+
+.popularFoodCard.active-card 
+.popularFoodCard-rating img{
+width: 32px;
+height: 32px;
+}
+
+.popularFoodCard.active-card 
+.popularFoodCard-rating p{
+font-size: 24px;
+color: var(--black-500);
+}
+
+.popularFoodCard.active-card 
+.popularFoodCard-price{
+    font-size: 24px;
+    color: var(--secondary-color);
+}

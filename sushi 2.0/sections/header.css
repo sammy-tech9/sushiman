@@ -1,0 +1,63 @@
+.headerNav{
+    display: flex;
+    overflow: hidden;
+}
+
+.headerLogo{
+    flex: 1;
+    display: flex;
+    position: relative;
+    padding: 20.5px;
+}
+
+.headerOverlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    z-index: -1;
+}
+
+.headerLogo h4 {
+    padding-left: 30px;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: var(--play-display);
+    color: var(--color-white);
+    opacity: 0.8;
+}
+
+.headerMenu, .headermenuMobile{
+    padding: 32px;
+    padding-left: 8px;
+    flex: 1.235;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 114px;
+    list-style: none;
+}
+
+.headerMenu li{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    text-transform: uppercase;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.headerMenu li img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.headermenuMobile{
+display: none;
+gap: 20px;
+position: relative;
+}
+
